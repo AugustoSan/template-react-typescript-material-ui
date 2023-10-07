@@ -16,6 +16,7 @@ const Home: React.FC = () => {
 
   return (
     <div>
+      <p>{auth.accessToken}</p>
       <button onClick={handleLogin}>Login</button>
     </div>
   );

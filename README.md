@@ -128,6 +128,8 @@ Crear un directorio para redux llamado ***redux***, dentro del directorio crear 
 
 Cambios realizados desde la documentacion de Redux: https://redux-toolkit.js.org/tutorials/typescript
 
+### Para guardar en el localStorage ###
+Instalar la libreria ``yarn add redux-persist``
 
   ## Prebuilt Components/Templates 🔥  
   You can checkout prebuilt components and templates by clicking on the 'Add Section' button or menu icon
