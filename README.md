@@ -131,9 +131,11 @@ Cambios realizados desde la documentacion de Redux: https://redux-toolkit.js.org
 ### Para guardar en el localStorage ###
 Instalar la libreria ``yarn add redux-persist``
 
-  ## Prebuilt Components/Templates 🔥  
-  You can checkout prebuilt components and templates by clicking on the 'Add Section' button or menu icon
-  on the top left corner of the navbar.
+  ## Build 🔥  
+  * Para Instalar las librerias:
+    ```yarn install```
+  * Para ejecutar el proyecto:  
+    ```yarn start```
       
   ## Save Readme ✨  
   Once you're done, click on the save button to download and save your ReadMe!
