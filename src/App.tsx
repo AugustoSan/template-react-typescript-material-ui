@@ -2,10 +2,6 @@ import React from 'react';
 
 import Home from 'pages/Home';
 
-function App() {
-  return (
-    <Home />
-  );
-}
+const App: React.FC = () => <Home />;
 
 export default App;
