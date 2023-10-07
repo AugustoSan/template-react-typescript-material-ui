@@ -117,6 +117,18 @@ Agregar en el archivo de configuracion del usuario de VSCode
     },
     ```
 
+
+## Configuración de Redux ##
+
+Se instalan las librerias de redux:
+
+``yarn add @reduxjs/toolkit react-redux``
+
+Crear un directorio para redux llamado ***redux***, dentro del directorio crear un archivo ***store.ts***
+
+Cambios realizados desde la documentacion de Redux: https://redux-toolkit.js.org/tutorials/typescript
+
+
   ## Prebuilt Components/Templates 🔥  
   You can checkout prebuilt components and templates by clicking on the 'Add Section' button or menu icon
   on the top left corner of the navbar.
