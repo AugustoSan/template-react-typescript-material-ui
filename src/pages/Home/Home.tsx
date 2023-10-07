@@ -1,22 +1,41 @@
 import React from 'react';
 
+// import { useCustomSelector } from 'hooks/redux';
 import { useCustomDispatch, useCustomSelector } from 'hooks/redux';
-import { setAccessToken } from 'redux/slices/auth';
+// import { setAccessToken, login } from 'redux/slices/auth';
+import { login } from 'redux/slices/auth';
 
 const Home: React.FC = () => {
-  const { auth } = useCustomSelector((state) => state);
+  const {
+    auth: { accessToken, isLoading }
+  } = useCustomSelector((state) => state);
 
   const dispatch = useCustomDispatch();
 
-  console.log('auth: ', auth.accessToken);
+  console.log('accessToken: ', accessToken);
+  console.log('isLoading: ', isLoading);
 
   const handleLogin = (): void => {
-    dispatch(setAccessToken('jhbkjbkhjbkjhbk'));
+    // Forma 1
+    // login(
+    //   {
+    //     email: 'eve.holt@reqres.in',
+    //     password: 'cityslicka'
+    //   },
+    //   dispatch
+    // );
+    dispatch(
+      login({
+        email: 'eve.holt@reqres.in',
+        password: 'cityslicka'
+      })
+    );
   };
 
   return (
     <div>
-      <p>{auth.accessToken}</p>
+      <p>{accessToken}</p>
+      <p>{isLoading ? 'Cargando' : ''}</p>
       <button onClick={handleLogin}>Login</button>
     </div>
   );
